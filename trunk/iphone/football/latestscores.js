@@ -13,6 +13,7 @@ ls.addEventHandlers = function(){
 							$('#showteams').hide();
 							$('#teams').show();
 							$('#scores').hide();
+							$('#team').text('');
 							return false;
 							})
 	$('#teams .teamname a').click(function(ev){
@@ -22,6 +23,7 @@ ls.addEventHandlers = function(){
 								  $('#showteams').show();	
 								  $('#scores').show();
 								  $('#teams').hide();
+								  $('#team').text($(ev.target).text());
 								  ls.currentTeamReplace = $(ev.target).attr('remove');
 								  if(window.Components && window.netscape && window.netscape.security && document.location.protocol.indexOf("http") == -1)
 								  window.netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");

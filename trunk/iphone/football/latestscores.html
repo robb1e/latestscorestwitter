@@ -5,14 +5,29 @@
 	<title>Latest Scores</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<style type="text/css">
-		body {font:normal 20px/1.2 Arial, sans-serif;background-color:#99FF99;}
-		div.entry{ padding:10px; border-top:solid 1px #D8E6F2;}
-		a:link, a:visited {color:#000000;}
+		body
+		{
+			font-family: Arial, sans-serif;
+			background-color:#99FF99;  
+			font-size: 2.2em;
+			width: 25em;
+			height: 100%;
+			line-height: 2em; 
+		}
+		.title
+		{
+			font-size: 2em;
+		}
+	    .teamname, .entry
+		{
+			padding:10px; 
+			border-top:solid 0.5em #FFFFFF;
+		}
+		a:link, a:visited {color:#000000;text-decoration: none;}
   	</style>
 </head>
 <body>
-	<h1>Latest Scores:</h1><h2 id="team"></h2>
-	<img src="gol.jpg" alt="GOL!"/>
+	<span class='title'>Latest Scores:</span><span id="team" class='title'></span>
 	<div id='showteams'>
 		<a href="showteams">Show Teams</a>
 	</div>
@@ -38,8 +53,8 @@
 		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/12684192.rss" remove='pompy_scores:'>Portsmouth</a></div>
 		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/14711392.rss" remove='sheffutd_scores:'>Sheffield United</a></div>
 		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/14638807.rss" remove='stoke_scores:'>Stoke City</a></div>
-		<div class="teamname"><a href='http://twitter.com/statuses/user_timeline/14711573.rss' remove='sunderlandscore:'>Sunderland</a></div>
-		<div class="teamname"><a href='http://twitter.com/statuses/user_timeline/20758324.rss' remove='swindon_scores:'>Swindon Town</a></div>
+		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/14711573.rss" remove='sunderlandscore:'>Sunderland</a></div>
+		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/20758324.rss" remove='swindon_scores:'>Swindon Town</a></div>
 		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/11613072.rss" remove='spurs_scores:'>Tottenham Hostspur</a></div>
 		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/14638766.rss" remove='tranmere_scores:'>Tranmere Rovers</a></div>
 		<div class="teamname"><a href="http://twitter.com/statuses/user_timeline/12684542.rss" remove='westham_scores:'>West Ham United</a></div>
