@@ -186,6 +186,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert Clutton";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -193,6 +194,7 @@
 				GCC_PREFIX_HEADER = LatestScoresWeb_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = LatestScoresWeb;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "141C69AB-8268-4AA1-AA97-1245584C2468";
 			};
 			name = Debug;
 		};
